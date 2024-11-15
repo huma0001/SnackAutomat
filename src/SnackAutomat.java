@@ -26,21 +26,16 @@ public class SnackAutomat {
 
     public int[] byttePenge(int byttePengeKunde){
         int[] byttePengeMønter = {20,10,5,2,1};
-
         int[] byttepengeArray = new int[5];
-
 
         byttepengeArray[0] = byttePengeKunde / 20;
         int restePenge = byttePengeKunde % 20;
 
-
         byttepengeArray[1] = restePenge / 10;
         restePenge = restePenge % 10;
 
-
         byttepengeArray[2] = restePenge / 5;
         restePenge = restePenge % 5;
-
 
         byttepengeArray[3] = restePenge / 2;
         restePenge = restePenge % 2;
@@ -78,8 +73,8 @@ public class SnackAutomat {
 
         //Nyt eksempel for at teste om koden virker
 
-        int varePris1 = 213;
-        int beløbBetalt1 = 599 ;
+        int varePris1 = 104;
+        int beløbBetalt1 = 200 ;
 
 
         int returnMoney1 = automat.køb(varePris1,beløbBetalt1);
@@ -88,6 +83,7 @@ public class SnackAutomat {
 
         //Virker som det skal
         automat.byttePenge(returnMoney1);
+
 
 
     }
